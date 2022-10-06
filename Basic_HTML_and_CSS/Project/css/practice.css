@@ -1,0 +1,197 @@
+/* the navbar*/
+.navbar {
+    overflow: hidden;
+    background: rgb(128, 197, 246);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    height: 86px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(125, 0, 209);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+.navbar a:hover {
+    background: darkblue;
+    color: rgb(251, 251, 145);
+}
+
+.main {
+    position: relative;
+    margin-bottom: 30px;
+}
+/* end navbar*/
+
+/*image*/
+.centered {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 194, 238);
+    font-style: italic;
+    font-size: xxx-large;
+    font-weight: bolder;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.video {
+    margin-top: 20px;
+}
+.center {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    filter: saturate(150%);
+    border: 2px solid salmon;
+    border-radius: 25px;
+}
+
+P {
+    color: rgb(248, 233, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    left: 50%;
+}
+
+p:hover {
+    color: blueviolet;
+}
+/*end of image*/
+
+/*footer*/
+footer {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h4 {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        background-color: red;
+    }
+}
+/*end of footer*/
+
+/*table*/
+table, th, td {
+    margin-top: 5px;
+    border: 2px solid rgb(255, 194, 238);
+    padding: 15px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+th {
+    background-color: salmon;
+    color: aliceblue;
+}
+.center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-radius: 15px;
+}
+/*end of table*/
+
+/*column*/
+.column {
+    position: relative;
+    display: block;
+    border: 2px solid plum;
+    color: purple;
+    background-color: rgb(206, 70, 255);
+    height: 30px;
+    width: 220px;
+    margin-top: 0px;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+}
+
+.column2 {
+    position: relative;
+    display: block;
+    border: 2px solid plum;
+    color: purple;
+    background-color: rgb(206, 70, 255);
+    height: 30px;
+    width: 220px;
+    margin-top: 0px;
+    border-radius: 10px;
+    float: right;
+    text-align: center;
+}
+
+.row {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+/*end of column*/
+
+/*game over*/
+.container2 {
+    position: relative;
+    width: 100%;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 50px;
+    height: 50px;
+    height: auto;
+    transition: .5 ease;
+    backface-visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.game {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container2:hover .image {
+    opacity: 0.3;
+}
+
+.container2:hover .game {
+    opacity: 1;
+}
+
+.text {
+    background-color: transparent;
+    color: red;
+    font-size: 25px;
+    padding: 16px 32px;
+}
+/*end of game over*/
