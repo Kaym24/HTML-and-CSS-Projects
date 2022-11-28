@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Godly Looks</title>
 <link rel="stylesheet" href="./CSS/one_page_website.css">
-<link rel="stylesheet" href="./CSS/one_page_website_animations.css"
+<link rel="stylesheet" href="./CSS/one_page_website_animations.css">
 </head>
 <body>
 
@@ -34,108 +34,73 @@
 
 <!-- Gallery -->
  <section id="gallery">
-    <div class="container">
-        <h1>Gallery</h1>
-        <div class="flex-container">
-
-              <!--PHOTO CONTAINER 1-->
-              <div class="photo-container">
-                <div class="photo">
-                    <img src="./images/Thumbs/thumb_1.jpg" alt="cloud couch">
-                </div>
-            </div>
-            <!--END PHOTO CONTAINER 1-->
-
-            <!--PHOTO CONTAINER 2-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="./images/Thumbs/thumb_2.jpg" alt="modern livingroom">
-                </div>
-            </div>
-            <!--END PHOTO CONTAINER 2-->
-
-            <!--PHOTO CONTAINER 3-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="./images/Thumbs/thumb_3.jpeg" alt="circle cement table">
-                </div>
-            </div>
-            <!--END PHOTO CONTAINER 3-->
-
-            <!--PHOTO CONTAINER 4-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="./images/Thumbs/thumb_4.jpeg" alt="square cement table">
-                </div>
-            </div>
-            <!--END PHOTO CONTAINER 4-->
-
-            <!--PHOTO CONTAINER 5-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="./images/Thumbs/thumb_5.jpg" alt="angel statue">
-                </div>
-            </div>
-            <!--END PHOTO CONTAINER 5-->
-
-            <!--PHOTO CONTAINER 6-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="./images/Thumbs/thumb_6.jpeg" alt="double statue angel">
-                </div>
-            </div>
-            <!--END PHOTO CONTAINER 6-->
-
-            <!--PHOTO CONTAINER 7-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="./images/Thumbs/thumb_7.jpg" alt="life size statue">
-                </div>
-            </div>
-            <!--END PHOTO CONTAINER 7-->
-
-            <!--PHOTO CONTAINER 8-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="./images/Thumbs/thumb_8.jpg" alt="statue heads">
-                </div>
-            </div>
-            <!--END PHOTO CONTAINER 8-->
-
-            <!--PHOTO CONTAINER 9-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="./images/Thumbs/thumb_9.jpg" alt="neutral livingroom">
-                </div>
-            </div>
-            <!--END PHOTO CONTAINER 9-->
-
-            <!--PHOTO CONTAINER 10-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="./images/Thumbs/thumb_10.jpeg" alt="neutral livingroom">
-                </div>
-            </div>
-            <!--END PHOTO CONTAINER 10-->
-
-            <!--PHOTO CONTAINER 11-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="./images/Thumbs/thumb_11.jpeg" alt="neutral livingroom">
-                </div>
-            </div>
-            <!--END PHOTO CONTAINER 11-->
-
-            <!--PHOTO CONTAINER 12-->
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="./images/Thumbs/thumb_12.jpeg" alt="neutral livingroom">
-                </div>
-            </div>
-            <!--END PHOTO CONTAINER 12-->
-
+    <div class="row">
+        <div class="column">
+          <img src="images/Thumbs/plant1-small.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
         </div>
-    </div>
+        <div class="column">
+          <img src="images/Thumbs/plant2-small.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/Thumbs/plant3-small.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/Thumbs/plant4-small.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+      </div>
+      
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="images/Thumbs/plant1-small.png" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="images/Thumbs/plant2-small.png" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="images/Thumbs/plant3-small.png" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="images/Thumbs/plant4-small.png" style="width:100%">
+          </div>
+      
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img class="demo" src="images/Thumbs/plant1-small.png" onclick="currentSlide(1)" alt="Nature">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="images/Thumbs/plant2-small.png" onclick="currentSlide(2)" alt="Snow">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="images/Thumbs/plant3-small.png" onclick="currentSlide(3)" alt="Mountains">
+          </div>
+      
+          <div class="column">
+            <img class="demo" src="images/Thumbs/plant4-small.png" onclick="currentSlide(4)" alt="Lights">
+          </div>
+        </div>
+      </div>
 </section>
 <!--END GALLERY-->
 
@@ -191,6 +156,7 @@
     www.GodlyLooks.com &nbsp;|&nbsp; &copy; 2022
 </div>
 <!--END FOOTER-->
+<script src="JS/one_page_website.js"></script>
 
 </body>
 </html>
